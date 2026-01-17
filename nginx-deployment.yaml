@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest  # DockerHub image
+        image: nginx:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
